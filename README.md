@@ -10,20 +10,30 @@ The downside? Running, managing, patching and updating a Cloud Foundry deploymen
 
 In 2018 IBM launched [Cloud Foundry Enterprise Environment](https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-about#about) to address exactly these concerns. The service allows self-service provisioning of an entire Cloud Foundry platform, running on the level of compute and networking isolation of your choice.
 
-Getting started with your own environment is really easy:
+Getting started with your own environment is really easy. Here's a quick guide to the steps involved:
 
-- Select Cloud Foundry from the menu and click `Create` under "Enterprise Environment"
+- Select Cloud Foundry from the menu and click `Create` under "Enterprise Environment".
 
-- Choose your desired geographical region, availability zone and hardware isolation
+- Choose your desired geographical region, availability zone and hardware isolation.
 
 ![provisioning details](images/provision-details.png)
 
-- The capacity of your Cloud Foundry environment can be adjusted by choosing the number of cells
+- The capacity of your Cloud Foundry environment can be adjusted by choosing the number of cells.
 
 ![capacity](images/capacity.png)
 
-- Hit `Create` and the environment will automatically be provisioned for you
+- Hit `Create` and the environment will automatically be provisioned for you.
 
 ![welcome](images/welcome.png)
 
-- The environment takes a little while to provision and set up (it's creating an entire Cloud Foundry platform for you!) but the welcome screen keeps you up to date with progress
+- The environment takes a little while to provision and set up (it's creating an entire Cloud Foundry platform for you!) but the welcome screen keeps you up to date with progress.
+
+- When your environment has finished provisioning you will be greeted by a dashboard displaying the status and usage of your Cloud Foundry cells and control plane.
+
+![overview](images/overview.png)
+
+- The API endpoint is shown on your overview page. Set this by using the `cf api` command from your terminal and you're good to go!
+
+![connect](images/connect.png)
+
+These few steps are all it takes to get up and running. Within a few clicks your enterprise can have the fantastic developer experience offered by Cloud Foundry without having to worry about the operational tasks involved in running your own isolated infrastructure. 
