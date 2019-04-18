@@ -1,8 +1,12 @@
-## Run your own enterprise PaaS using Cloud Foundry
+# Run your own enterprise PaaS using Cloud Foundry
+
+## The Problem
 
 As a Cloud Foundry user, it's super easy to deploy your code without having to worry about the infrastructure underneath. Managed Cloud Foundry providers like [IBM Cloud](https://cloud.ibm.com) allow a seemingly indefinite amount of compute which gives the user great flexibility. The most common objections to running workloads in this way is that they are public-facing and that the compute resources are multi-tenant. What often happens is that companies end up running Cloud Foundry on top of their own infrastructure in order to combat these objections. Now they have a single-tenant environment and they can control the networking themselves.
 
 The downside? Running, managing, patching and updating a Cloud Foundry deployment have now all become problems that the company owns. On top of this, they need to monitor and manage the underlying infrastructure too. The company's developers may have the same great user experience that Cloud Foundry provides but there is now a significant operations overhead.
+
+## The Solution
 
 In 2018 IBM launched [Cloud Foundry Enterprise Environment](https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-about#about) to address exactly these concerns. The service allows self-service provisioning of an entire Cloud Foundry platform, running on the level of compute and networking isolation of your choice.
 
